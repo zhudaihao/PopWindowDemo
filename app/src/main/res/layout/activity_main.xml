@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/back" />
+
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/details_icon" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/base_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_layout"
+        android:background="@color/colorAccent"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/rl_layout_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_layout"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/pop_check_color"
+            android:gravity="center"
+            android:onClick="text"
+            android:text="第一场"
+            android:textColor="@color/pop_check"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/pop_check_color"
+            android:gravity="center"
+            android:onClick="text"
+            android:text="第二场"
+            android:textColor="@color/pop_check"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/pop_check_color"
+            android:gravity="center"
+            android:onClick="text"
+            android:text="第三场"
+            android:textColor="@color/pop_check"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
